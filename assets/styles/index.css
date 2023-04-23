@@ -1,3 +1,79 @@
-h1 {
-  color: red;
+@charset "UTF-8";
+@font-face {
+  font-family: "inter-bold";
+  src: url(../fonts/Inter-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "merri";
+  src: url(../fonts/Merriweather-Light.ttf);
+}
+/****Declaration des variable****/
+/**************************Configuration Général**************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  color: rgb(243, 243, 243);
+}
+
+body {
+  background: url("../img/bg.jpg") fixed center/cover;
+  margin: 0 auto; /* pour tout centrer*/
+  text-align: center;
+  font-family: merri, serif;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+body:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(17, 17, 17);
+  animation: animBefore 1.5s ease forwards;
+  animation-delay: 0.15s;
+}
+@keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+
+.btn {
+  background: none;
+  border: 2px solid rgb(17, 17, 17);
+  height: 45px;
+  width: 170px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  font-family: inter-bold, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+header {
+  color: white;
+  min-height: 100vh;
+}
+header .head-content {
+  min-height: 100vh;
 }/*# sourceMappingURL=index.css.map */
